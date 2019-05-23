@@ -180,12 +180,12 @@ export default class SwiperFlatList extends PureComponent {
       showsHorizontalScrollIndicator: false,
       showsVerticalScrollIndicator: false,
       pagingEnabled: true,
-      ...props,
       onMomentumScrollEnd: this._onMomentumScrollEnd,
       onScrollToIndexFailed: this._onScrollToIndexFailed,
       data: this._data,
       renderItem: this._renderItem,
       initialNumToRender: this._initialNumToRender,
+      ...props,
       // inverted
       // onViewableItemsChanged={(data, index, x) => {
       // getItemLayout={(data, index, x) => {
